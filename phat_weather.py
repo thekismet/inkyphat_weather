@@ -24,7 +24,7 @@ APIKEY= '?' # put your Dark Sky API key here. Get one at https://darksky.net/dev
 with forecast (APIKEY, *LOCATION, units=UNITS) as location:
     # today
     currentTemp = location['currently']['temperature']
-    upcoming_conditions = location['minutely']['summary']
+    upcoming_conditions = location['hourly']['summary']
     relativeHumidity = location['currently']['humidity']
     highTemp = location['daily']['data'][0]['temperatureHigh']
     lowTemp = location['daily']['data'][0]['temperatureLow']
