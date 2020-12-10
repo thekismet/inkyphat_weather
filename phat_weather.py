@@ -91,7 +91,7 @@ draw.text((105, 8), temp, inky_display.BLACK, tempFont)
 # draw today's high and low temps to center on left side below date
 w, h = dateFont.getsize(tempsToday)
 x_temps = (inky_display.WIDTH / 4) - (w / 2)
-draw.text((x_temps, 45), tempsToday, inky_display.BLACK, font)
+draw.text((0, 45), tempsToday, inky_display.BLACK, font)
 
 # draw the current summary and conditions on the left side of the screen
 draw.text((3, 60), currentCondFormatted, inky_display.BLACK, smallFont)
