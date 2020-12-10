@@ -60,6 +60,8 @@ dateFont = ImageFont.truetype('fonts/Roboto-Bold.ttf', 14)
 font = ImageFont.truetype('fonts/ElecSign.ttf', 10)
 smallFont = ImageFont.truetype('fonts/ElecSign.ttf', 8)
 smallestFont = ImageFont.truetype('fonts/ElecSign.ttf', 7)
+sFont = ImageFont.truetype('fonts/Roboto-Black.ttf', 10)
+ssFont = ImageFont.truetype('fonts/Roboto-Black.ttf', 9)
 
 # define weekday text
 weekday = date.today()
