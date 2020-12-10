@@ -86,7 +86,7 @@ draw.text((3, 25), dayDate, inky_display.BLACK, dateFont)
 
 #draw current temperature to right of day name and date
 draw.text((105, 8), temp, inky_display.BLACK, tempFont)
-draw.text((105, 34), tempF, inky_display.BLACK, font)
+#draw.text((105, 34), tempF, inky_display.BLACK, font)
 
 # draw today's high and low temps to center on left side below date
 w, h = dateFont.getsize(tempsToday)
