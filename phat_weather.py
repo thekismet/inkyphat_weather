@@ -64,7 +64,7 @@ smallestFont = ImageFont.truetype('fonts/ElecSign.ttf', 7)
 # define weekday text
 weekday = date.today()
 day_Name = date.strftime(weekday, '%A')
-day_month_year = time.strftime('%H:%M %B %-d')
+day_month_year = time.strftime('%H:%M %b %-d')
 
 weekday2 = datetime.date.today() + datetime.timedelta(days=1)
 day2 = date.strftime(weekday2, '%A')
