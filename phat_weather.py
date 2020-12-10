@@ -117,12 +117,15 @@ for icon in glob.glob('weather-icons/icon-*.png'):
 if iconDesc is not None:
     img.paste(icons[iconDesc], (145, 2))        
 else:
-    draw.text((140, 10), '?', inky_display.YELLOW, dayFont)
+    draw.text((140, 10), '?', inky_display.BLACK, dayFont)
 
 
 # set up the image to push it
 inky_display.set_image(img)
-inky_display.set_border(inky_display.YELLOW)
+inky_display.set_border(inky_display.BLACK)
+
+inky_display.h_flip = True
+inky_display.v_flip = True
 
 # push it all to the screen
 inky_display.show()
