@@ -14,8 +14,8 @@ import textwrap
 inky_display = InkyPHAT('your_colour')
 
 # set lat/long for location
-LOCATION = #put your longitude and latittude here in decimal degrees
-UNITS = '?' #specify the units you want your results in here, see the Dark Sky API docs page for details 
+LOCATION = 37.5683,126.9778 #put your longitude and latittude here in decimal degrees
+UNITS = 'auto' #specify the units you want your results in here, see the Dark Sky API docs page for details 
 
 # set Darksky API Key
 APIKEY= '?' # put your Dark Sky API key here. Get one at https://darksky.net/dev
