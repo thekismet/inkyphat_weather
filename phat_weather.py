@@ -6,6 +6,7 @@ import glob
 from inky import InkyPHAT
 from PIL import Image, ImageFont, ImageDraw
 import datetime
+import time
 from datetime import date, timedelta
 from darksky import forecast
 import textwrap
@@ -63,7 +64,7 @@ smallestFont = ImageFont.truetype('fonts/ElecSign.ttf', 7)
 # define weekday text
 weekday = date.today()
 day_Name = date.strftime(weekday, '%A')
-day_month_year = date.strftime(weekday, '%-d %B %y')
+day_month_year = time.strftime('%H:%M %B %-d')
 
 weekday2 = datetime.date.today() + datetime.timedelta(days=1)
 day2 = date.strftime(weekday2, '%A')
