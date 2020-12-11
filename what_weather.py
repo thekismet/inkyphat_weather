@@ -11,7 +11,7 @@ from datetime import date, timedelta
 from darksky import forecast
 import textwrap
 
-# set the colour of the phat: black, red or yellow
+# set the colour of the what: black, red or yellow
 inky_display = InkyWHAT('yellow')
 
 # set lat/long for location
@@ -48,7 +48,7 @@ tempsToday = 'High ' + '{0:.0f}'.format(highTemp) + ' Low ' + '{0:.0f}'.format(l
 tempsDay2 = 'High ' + '{0:.0f}'.format(highTemp2) + ' Low ' + '{0:.0f}'.format(lowTemp2)
 
 # Create a new blank image, img, of type P 
-# that is the width and height of the Inky pHAT display,
+# that is the width and height of the Inky wHAT display,
 # then create a drawing canvas, draw, to which we can draw text and graphics
 img = Image.new('P', (inky_display.WIDTH, inky_display.HEIGHT))
 draw = ImageDraw.Draw(img)
