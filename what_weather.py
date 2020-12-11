@@ -3,7 +3,7 @@
 # for the Dark Sky API https://github.com/lukaskubis/darkskylib 
 
 import glob
-from inky import InkyPHAT
+from inky import InkyWHAT
 from PIL import Image, ImageFont, ImageDraw
 import datetime
 import time
@@ -12,7 +12,7 @@ from darksky import forecast
 import textwrap
 
 # set the colour of the phat: black, red or yellow
-inky_display = InkyPHAT('your_colour')
+inky_display = InkyWHAT('yellow')
 
 # set lat/long for location
 LOCATION = 37.5683,126.9778 #put your longitude and latittude here in decimal degrees
