@@ -39,7 +39,7 @@ with forecast (APIKEY, *LOCATION, units=UNITS) as location:
 
 # format today's variables, current temp and high and low temps for the day
 #in both Celcius and Fahrenheit for old-timers and Americans
-temp = '{0:.0f}'.format(currentTemp) + '°'
+temp = '{0:.0f}'.format(currentTemp) + 'C'
 currentTempF = round((1.8 * currentTemp) + 32)
 tempF = str(currentTempF) + 'F'
 tempsToday = 'High ' + '{0:.0f}'.format(highTemp) + ' Low ' + '{0:.0f}'.format(lowTemp)
